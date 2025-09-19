@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Marketplace System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1 id="page-title">Car Marketplace Listings</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Brand</th>
+        <th>Model</th>
+        <th>Year</th>
+        <th>Condition</th>
+        <th>Price (USD)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">Toyota</td>
+        <td>Camry</td>
+        <td>2020</td>
+        <td>Used</td>
+        <td>$18,000</td>
+      </tr>
+      <tr class="highlight-row">
+        <td>Corolla</td>
+        <td>2022</td>
+        <td>New</td>
+        <td>$23,000</td>
+      </tr>
+      <tr>
+        <td>Hyundai</td>
+        <td>Elantra</td>
+        <td>2021</td>
+        <td>Used</td>
+        <td>$15,500</td>
+      </tr>
+      <tr>
+        <td colspan="2">Mercedes-Benz E-Class</td>
+        <td>2023</td>
+        <td>New</td>
+        <td>$55,000</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 id="Inquiry">Car Inquiry Form</h2>
+  <form class="feedback-form">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="role">I am a:</label><br>
+    <select id="role" name="role">
+      <option>Buyer</option>
+      <option>Seller</option>
+      <option>Dealer</option>
+    </select><br><br>
+
+    <label>Interested in financing?</label><br>
+    <input type="radio" name="finance" value="yes"> Yes</label>
+    <input type="radio" name="finance" value="no"> No</label><br><br>  
+
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4"></textarea><br><br>
+
+    <button type="submit">Submit Inquiry</button>
+  </form>
+
+</body>
+</html>
